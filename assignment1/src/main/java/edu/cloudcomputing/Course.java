@@ -11,10 +11,10 @@ public class Course {
     private List<String> courseRoster;
     private Set<Lecture> courseLecture;
 
-    Course(){
+    Course(String courseName){
         this.courseName = courseName;
         courseBoard = new HashSet<>();
-        courseRoster = new ArrayList<>();
+        //courseRoster = new ArrayList<>();
         courseLecture = new HashSet<>();
     }
 
@@ -26,11 +26,11 @@ public class Course {
         return courseName;
     }
 
-    public Set<Board> getborad(){
+    public Set<Board> getCourseBoard(){
         return courseBoard;
     }
 
-    public Set<Lecture> getLecture(){
+    public Set<Lecture> getCourseLecture(){
         return courseLecture;
     }
 
@@ -38,7 +38,7 @@ public class Course {
         this.courseRoster = roster;
     }
 
-    public List<String> getRoster(){
+    public List<String> getCourseRoster(){
         return courseRoster;
     }
 }

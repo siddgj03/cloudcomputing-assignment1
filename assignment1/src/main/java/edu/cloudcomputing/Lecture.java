@@ -2,12 +2,12 @@ package edu.cloudcomputing;
 
 public class Lecture {
     private static Integer lectureID = 1;
-    Integer id;
+    Integer id ;
     private String notes;
     private String associatedMaterial;
 
     public Lecture(String notes, String associatedMaterial){
-        this.lectureID = id++;
+        this.id = lectureID++;
         this.notes = notes;
         this.associatedMaterial = associatedMaterial;
     }
