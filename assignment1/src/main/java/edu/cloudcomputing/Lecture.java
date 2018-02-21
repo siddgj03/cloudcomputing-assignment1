@@ -24,6 +24,10 @@ public class Lecture {
         return notes;
     }
 
+    public String getAssociatedMaterial(){
+        return associatedMaterial;
+    }
+
     public void setAssociatedMaterial(String associatedMaterial){
         this.associatedMaterial = associatedMaterial;
     }

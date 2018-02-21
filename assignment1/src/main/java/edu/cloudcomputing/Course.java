@@ -14,7 +14,6 @@ public class Course {
     Course(String courseName){
         this.courseName = courseName;
         courseBoard = new HashSet<>();
-        //courseRoster = new ArrayList<>();
         courseLecture = new HashSet<>();
     }
 
@@ -38,6 +37,9 @@ public class Course {
         this.courseRoster = roster;
     }
 
+    public void setCourseLecture(Set<Lecture> lecture){
+        this.courseLecture = lecture;
+    }
     public List<String> getCourseRoster(){
         return courseRoster;
     }
